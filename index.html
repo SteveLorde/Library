@@ -5,9 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="drawer">
+                <div class="dashboard menuItem">
+                    <img src="./assets/view-dashboard.svg" alt="">
+                    <h1 class="DashID">Dashboard</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/home.svg" alt="">
+                    <h1>Home</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/account-circle.svg" alt="">
+                    <h1>Profile</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/message-bulleted.svg" alt="">
+                    <h1>Messages</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/history.svg" alt="">
+                    <h1>History</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/account-group.svg" alt="">
+                    <h1>Communities</h1>
+                </div>
+                <!-- extra space -->
+                <div class="menuItem">
+                    <img src="./assets/account-cog.svg" alt="">
+                    <h1>Settings</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/face-agent.svg" alt="">
+                    <h1>Support</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="./assets/shield-account.svg" alt="">
+                    <h1>Privacy</h1>
+                </div>
+    </div>
+    <div class="navbar">
+        <div class="topNav">
+            <div class="search">
+                <div class="lolmenuItem">
+                    <img class="magnify" src="./assets/magnify.svg" alt="">
+                </div>
+                <input type="text" name="search" autocomplete="off">
+            </div>
+            <div class="account">
+                <div class="menuIcon">
+                    <img class="bell" src="./assets/Asset 1.svg" alt="">
+                </div>
+                <div class="avatar">
+                    <img src="./assets/avatar.svg" alt="">
+                </div>
+                <p class="name">Admin User</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="profile">
+                <!--profile details-->
+                <div class="avatar">
+                    <img src="./assets/avatar.svg" alt="">
+                </div>
+                <div class="profile-name">
+                    <p class="greeting">Hi there</p>
+                    <p class="name">Admin User <span class="username">(@admin)</span></p>
+                    </div>
+
+            <!--avatar-->
+
+            </div>
+            <div class="buttons">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+        </div>
+        </div>
+    </div>
+    <main class="MainContent">
+        <div class="projects">
+            <h3>your projects</h3>
+            <div class="cards">
+                <div class="card">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-test">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum iure commodi sequi, recusandae delectus voluptatum fuga magnam quas ullam perferendis eveniet, vero rerum cupiditate esse sapiente mollitia doloribus architecto?
+                    </p>
+                    <div class="icons">
+                        <img src="./assets/star-plus-outline.svg" alt="">
+                        <img src="./assets/eye-plus-outline.svg" alt="">
+                        <img src="./assets/source-branch-plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-test">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum iure commodi sequi, recusandae delectus voluptatum fuga magnam quas ullam perferendis eveniet, vero rerum cupiditate esse sapiente mollitia doloribus architecto?
+                    </p>
+                    <div class="icons">
+                        <img src="./assets/star-plus-outline.svg" alt="">
+                        <img src="./assets/eye-plus-outline.svg" alt="">
+                        <img src="./assets/source-branch-plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-test">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum iure commodi sequi, recusandae delectus voluptatum fuga magnam quas ullam perferendis eveniet, vero rerum cupiditate esse sapiente mollitia doloribus architecto?
+                    </p>
+                    <div class="icons">
+                        <img src="./assets/star-plus-outline.svg" alt="">
+                        <img src="./assets/eye-plus-outline.svg" alt="">
+                        <img src="./assets/source-branch-plus.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--announcements-->
+        <div class="announcements">
+            <h1 class="announcementhead">Announcements</h1>
+            <ul class="card">
+                <li class="announcement">
+                    <h5 class="card-title">site maintenance</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates, temporibus maiores doloremque ad </p>
+                </li>
+                <li class="announcement">
+                    <h5 class="card-title">Updates released</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates, temporibus maiores doloremque ad </p>
+                </li>
+                <li class="announcement">
+                    <h5 class="card-title">News 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates, temporibus maiores doloremque ad </p>
+                </li>
+            </ul>
+        </div>
+        <!--trending-->
+        <div class="trendings">
+            <h3>trending</h3>
+            <ul class="card">
+                <!-- list of all trending -->
+                <li class="trend trend1">
+                    <div class="avatar"></div>
+                    <div class="account">
+                        <p class="username">3atef</p>
+                        <p class="name-card-text">World Peace Builder</p>
+                    </div>
+                </li>
+                <li class="trend trend2">
+                    <div class="avatar"></div>
+                    <div class="account">
+                        <p class="username">Morgan</p>
+                        <p class="name-card-text">Koolest Youtuber</p>
+                    </div>
+                </li>
+                <li class="trend trend3">
+                    <div class="avatar"></div>
+                    <div class="account">
+                        <p class="username"></p>
+                        <p class="name-card-text">Trend User 3</p>
+                    </div>
+                </li>
+                <li class="trend trend4">
+                    <div class="avatar"></div>
+                    <div class="account">
+                        <p class="username"></p>
+                        <p class="name-card-text">Trend User 4</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 </html>
