@@ -19,11 +19,11 @@
                     <img src="../assets/view-dashboard.svg" alt="">
                     <h1 class="DashID">Dashboard</h1>
                 </div>
-                <a class="menuItem" href="/">
+                <a class="menuItem" href="../index.html">
                     <img src="../assets/home.svg" alt="">
                     <h1>Home</h1>
                 </a>
-                <a class="menuItem" href = "./library/libray.html">
+                <a class="menuItem" href = "../library/libray.html">
                     <img src="../assets/account-circle.svg" alt="">
                     <h1 href ="./library/index.html">Library</h1>
                 </a>
@@ -90,9 +90,9 @@
 
             </div>
             <div class="buttons">
-                <button class="btn">New</button>
-                <button class="btn">Upload</button>
-                <button class="btn">Share</button>
+                <button class="btn add-book">New Book</button>
+                <button class="btn">X</button>
+                <button class="btn">X</button>
         </div>
         </div>
     </div>
@@ -106,13 +106,15 @@
     </main>
     <div class="modal" id="modal">
         <div class="modal-content">
-            <span class="close">X</span>
+            <span class="close">&times;</span>
             <div class="modal-form">
-                <h1 class="form-title">Add Book</h1>
+                <h1 class="form-title"></h1>
                 <form class="add-book-form">
                     <div class="modal-input-field">
                         <label for="book-title">Title:</label>
-                        <input type="text" name="book-title" id="book-title" class="modal-form-input">
+                        <input
+                         type="text" name="book-title" id="book-title" class="modal-form-input"
+                         />
                     </div>
                     <div class="modal-input-field">
                         <label for="book-author">Author:</label>
@@ -126,7 +128,8 @@
                     <div class="modal-input-field">
                         <span class="modal-read">Read ?</span>
                         <label class="container">
-                            <input type="checkbox" name="book-read" id="book-read" class="checkmark">
+                            <input type="checkbox" name="book-read" id="book-read" class="checkmark"
+                            />
                         </label>
                     </div>
                     <div class="submit-modal-form">
