@@ -1,18 +1,25 @@
 const books = document.querySelector('.books');
 
-const myLibrary = [{
-    title: 'Book1',
-    author: 'me',
-    pages: 500,
-    read: true,
-},{
-    title: 'Book2',
-    author: 'you',
-    pages: 5000,
-    read: false,
+let myLibrary = [{
+
 },
 ];
 
+function addLocalStorage() {
+    /*localStorage.setItem('library', JSON.stringify([ { 
+        title: 'Book1',
+        author: 'me',
+        pages: 500,
+        read: true,
+    },{
+        title: 'Book2',
+        author: 'you',
+        pages: 5000,
+        read: false,
+    }]))*/
+    myLibrary = JSON.parse(localStorage.getItem('library')) || []
+    saveAndRenderBooks()
+}
 function createBookElement(el, content, className) {
     const element = document.createElement(el);
     element.textContent = content
@@ -30,11 +37,11 @@ function createReadElement(bookItem,book) {
         if (e.target.checked) {
             bookItem.setAttribute('class', ' card book read-checked')
             book.read = true
-            renderAndSave()
+            saveAndRenderBooks()
         } else {
             bookItem.setAttribute('class', 'card book read-unchecked')
             book.read = false
-            renderAndSave()
+            saveAndRenderBooks()
         }
 
     })
@@ -47,7 +54,14 @@ function createReadElement(bookItem,book) {
 }
 
 function createEditIcon(book) {
-    return createBookElement('div', '', '')
+    const editIcon = document.createElement('img')
+    editIcon.src = '../assets/pencil.svg'
+    editIcon.setAttribute('class', 'edit-icon')
+    editIcon.setAttribute('width', '30px')
+    editIcon.addEventListener('click', (e) => {
+        console.log(book)
+    })
+    return editIcon
 }
 
 function createIcons() {
@@ -68,6 +82,11 @@ function createIcons() {
     return div
 }
 
+function deleteBook(index) {
+    myLibrary.splice(index, 1)
+    saveAndRenderBooks()
+}
+
 function createBookItem(book,index) {
     const bookItem = document.createElement('div')
     bookItem.setAttribute('id',index)
@@ -84,12 +103,25 @@ function createBookItem(book,index) {
     bookItem.appendChild(createBookElement('button', 'x', 'delete' ))
     bookItem.appendChild(createIcons())
     bookItem.appendChild(createEditIcon(book))
+
+    bookItem.querySelector('.delete').addEventListener('click', () => {
+        deleteBook(index)
+    })
+
+
     books.insertAdjacentElement('afterbegin', bookItem)
 }
 
 function renderBooks() {
+    books.textContent = ''
     myLibrary.map((book,index) => {
         createBookItem(book,index)
     })
 }
-renderBooks();
+
+function saveAndRenderBooks() {
+    localStorage.setItem('library', JSON.stringify(myLibrary))
+    renderBooks()
+    
+}
+addLocalStorage()

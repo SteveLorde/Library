@@ -1,0 +1,67 @@
+.book {
+    position: relative;
+    z-index: 0;
+  }
+  .navbar {
+    z-index: 10;
+  }
+  .book > button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: white;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  .book-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 8px;
+    margin-bottom: 0.5rem;
+    font-style: oblique;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+  }
+  .book-author {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .book-pages {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .book-read {
+    display: flex;
+    align-items: center;
+  }
+  
+  .book-read > input {
+    cursor: pointer;
+  }
+  
+  .book-read-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 5px;
+  }
+  .card {
+    border-left: 10px solid rgb(202, 33, 33) !important;
+    max-width: 300px;
+    background-color: rgba(34, 211, 238, 0.3) !important;
+  }
+  .read-checked {
+    border-left: 10px solid rgb(42, 172, 25) !important;
+  }
+  .edit-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 45px;
+    top: 15px;
+  }
+ 
