@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>LibraryDashboard</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/book-open-page-variant-outline.svg">
+</head>
+<body>
+    <div class="drawer">
+                <div class="dashboard menuItem">
+                    <img src="../assets/view-dashboard.svg" alt="">
+                    <h1 class="DashID">Dashboard</h1>
+                </div>
+                <a class="menuItem" href="/">
+                    <img src="../assets/home.svg" alt="">
+                    <h1>Home</h1>
+                </a>
+                <a class="menuItem" href = "./library/libray.html">
+                    <img src="../assets/account-circle.svg" alt="">
+                    <h1 href ="./library/index.html">Library</h1>
+                </a>
+                <div class="menuItem">
+                    <img src="../assets/message-bulleted.svg" alt="">
+                    <h1>Messages</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="../assets/history.svg" alt="">
+                    <h1>History</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="../assets/check-circle.svg" alt="">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="../assets/account-group.svg" alt="">
+                    <h1>Communities</h1>
+                </div>
+                <!-- extra space -->
+                <div class="menuItem">
+                    <img src="../assets/account-cog.svg" alt="">
+                    <h1>Settings</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="../assets/face-agent.svg" alt="">
+                    <h1>Support</h1>
+                </div>
+                <div class="menuItem">
+                    <img src="../assets/shield-account.svg" alt="">
+                    <h1>Privacy</h1>
+                </div>
+    </div>
+    <div class="navbar">
+        <div class="topNav">
+            <div class="search">
+                <div class="lolmenuItem">
+                    <img class="magnify" src="../assets/magnify.svg" alt="">
+                </div>
+                <input type="text" name="search" autocomplete="off">
+            </div>
+            <div class="account">
+                <div class="menuIcon">
+                    <img class="bell" src="../assets/Asset 1.svg" alt="">
+                </div>
+                <div class="avatar">
+                    <img src="../assets/avatar.svg" alt="">
+                </div>
+                <p class="name">Admin User</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="profile">
+                <!--profile details-->
+                <div class="avatar">
+                    <img src="../assets/avatar.svg" alt="">
+                </div>
+                <div class="profile-name">
+                    <p class="greeting">Hi there</p>
+                    <p class="name">Admin User <span class="username">(@admin)</span></p>
+                    </div>
+
+            <!--avatar-->
+
+            </div>
+            <div class="buttons">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+        </div>
+        </div>
+    </div>
+    <main class="MainContent">
+        <div class="projects">
+            <h3>your projects</h3>
+            <div class="cards"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
