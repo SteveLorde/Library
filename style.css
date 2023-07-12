@@ -23,23 +23,10 @@ body {
     height: 100vh;
     display: grid;
     grid-template-areas:
-      "drawer nav nav nav"
-      "drawer content content content";
+      "nav nav nav nav"
+      "content content content content";
     grid-template-rows: 0.6fr 4fr;
     grid-template-columns: 5rem 1fr 1fr 1fr;
-}
-
-.drawer {
-    background-color: var(--drawer-color);
-    width: 5rem;
-    position: fixed;
-    transition: var(--transition-drawer);
-    overflow: hidden;
-    height: 100vh;
-}
-
-.drawer:hover {
-    width: var(--drawer-width);
 }
 
 .menuItem {
