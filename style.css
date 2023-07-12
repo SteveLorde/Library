@@ -95,8 +95,8 @@ padding-left: 20px;
   grid-area: nav;
   transition: var(--transition-notDrawer);
   background-color: var(--nav-bg-1);
-  padding: 1.5vw 3vw;
-  border-bottom: 2px solid rgb(219, 219, 219);
+  padding: 0.5vw 2vw;
+  border-bottom: 3px solid rgb(219, 219, 219);
 }
 
 .topNav {
@@ -196,9 +196,8 @@ img {
     color: var(--text-secondary);
     font-weight: 800;
     padding: 0.5rem 1.8rem;
-    border-radius: 7px;
+    border-radius: 50px;
     font-size: 20px;
-    border: 1px solid gray;
     cursor: pointer;
   }
 
